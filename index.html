@@ -219,6 +219,52 @@
                 </div>
             </div>
         </footer>
+
+
+
+
+
+
+<form id="contactForm" action="https://script.google.com/macros/s/AKfycbz4jh3-Ty6_VVp_SjN3RM-x6Vpq3zqTkPg_aFTvRdApJwwYkgUclfY4mOr0AXZfrrM/exec" method="post">
+    <!-- Name input -->
+    <div class="form-floating mb-3">
+        <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
+        <label for="name">Full Name</label>
+    </div>
+    
+    <!-- Email address input -->
+    <div class="form-floating mb-3">
+        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
+        <label for="email">Email Address</label>
+    </div>
+    
+    <!-- Phone number input -->
+    <div class="form-floating mb-3">
+        <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required />
+        <label for="phone">Phone Number</label>
+    </div>
+    
+    <!-- Message input -->
+    <div class="form-floating mb-3">
+        <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+        <label for="message">Message</label>
+    </div>
+
+
+
+
+        <!-- Feedback Modal-->        
+
+    
+    <!-- Submit Button -->
+    <div class="d-grid">
+        <button class="btn btn-primary rounded-pill btn-lg" type="submit">Submit</button>
+    </div>
+</form>
+
+
+
+
         <!-- Feedback Modal-->
         <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -235,29 +281,29 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" action="https://script.google.com/macros/s/AKfycbwEOZlGa9ToxUAKmVLZcZtH9YUsjoNg4eeM9d6f-XYNwAZVN2UBhgQDBnRayX5ELk0/exec" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input name="name" class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">الاسم بالكامل</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">ادخل اسم.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input name="email" class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">بريد الكتروني</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">مطلوب بريد الكتروني.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">البريد الالكترونى غير صحيح.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input name="phone" class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">تليفون</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">اكتب رقم تليفون.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea name="message" class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">الرسالة</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">مطلوب كتابة رسالة.</div>
                             </div>
@@ -279,7 +325,11 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">حدث خطأ!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">ارسال</button></div>
+                            <div class="d-grid"><button
+                                
+                                action="https://script.google.com/macros/s/AKfycbwEOZlGa9ToxUAKmVLZcZtH9YUsjoNg4eeM9d6f-XYNwAZVN2UBhgQDBnRayX5ELk0/exec"
+                                
+                                class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">ارسال</button></div>
                         </form>
                     </div>
                 </div>
@@ -293,6 +343,36 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
+
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+        <script>
+function submitForm() {
+    // Get the form data
+    var formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value
+    };
+
+    // Serialize the form data as JSON
+    var jsonData = JSON.stringify(formData);
+
+    // Set the value of the hidden input field
+    document.getElementById("formData").value = jsonData;
+
+    // Submit the form
+    document.getElementById("contactForm").submit();
+}
+</script>
+
+
+
     </body>
 </html>
